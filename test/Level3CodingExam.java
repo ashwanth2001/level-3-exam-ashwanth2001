@@ -5,6 +5,9 @@ import java.util.HashMap;
 
 import org.junit.Test;
 
+import ans.HashMapCalculator;
+import ans.VoteProcessor;
+
 public class Level3CodingExam {
 
 	/**
@@ -28,7 +31,8 @@ public class Level3CodingExam {
 		votes.add("Pope Francis");
 		votes.add("Edward Snowden");
 
-		assertEquals("pope francis", new VoteProcessor().calculateElectionWinner(votes));
+		new VoteProcessor();
+		assertEquals("pope francis", VoteProcessor.calculateElectionWinner(votes));
 	}
 
 	/** If neither candidate has more votes than the other, report a tie by returning the String "TIE". **/
@@ -38,7 +42,8 @@ public class Level3CodingExam {
 		votes.add("pope francis");
 		votes.add("edward Snowden");
 
-		assertEquals("TIE", new VoteProcessor().calculateElectionWinner(votes));
+		new VoteProcessor();
+		assertEquals("TIE", VoteProcessor.calculateElectionWinner(votes));
 	}
 
 	/** 
